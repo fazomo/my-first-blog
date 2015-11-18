@@ -1,25 +1,24 @@
 <html>
 <head>
-<style>
-body {background:#fff}
-.abc {background:#364659; height:300px; width:100%}
-.abc p, .abc h1 {color:#fff}
-.abc a {text-decoration:none; color:#fff}
-
-.def {height:2px; width:100%; background:#FFF}
-</style>
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.css">
+<link rel="stylesheet" href="static/css/style.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 </head>
+
 <body>
 
-{% for post in posts %}
+<header>
+  <h1>fazomo's Blog SEX<h1>
+</header>
 
-<section class="abc">
-<p>published: {{ post.published_date }}</p>
-<p>{{ post.author }}</p>
-<h1><a href="">{{ post.title }}</a></h1>
-<p>{{ post.text|linebreaks }}</p>
-</section>
-<section class="def">
+{% for post in posts %}
+<section id="post_area">
+  <p class="info"><span>By</span>{{ post.author }}<span></span><span>Published</span>{{ post.published_date }}</p>
+  <h3><a href="">{{ post.title }}</a></h3>
+  <p class="content">{{ post.text|linebreaks }}</p>
+
+  <section class="seperator">
+  </section>
 </section>
 
 {% endfor %}

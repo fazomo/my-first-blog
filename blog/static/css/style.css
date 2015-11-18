@@ -1,0 +1,12 @@
+body {background:#fff}
+header {background:#364659; height:100px; box-sizing:border-box; padding:20px}
+header h1 {color:#fff; margin:10px 0; line-height:40px}
+
+#post_area {box-sizing:border-box; padding:20px 20px 0; background:#fff; width:100%}
+#post_area .info {margin:0; color:#444; font-size:15px; font-weight:bold}
+#post_area .info > span {color:#aaa; margin-right:5px; font-size:12px}
+#post_area h3 {margin:10px 0; line-height:initial}
+#post_area h3 > a {color:#364659; text-decoration:none}
+#post_area .content {color:#888}
+
+.seperator {height:2px; width:100%; background:#ddd}

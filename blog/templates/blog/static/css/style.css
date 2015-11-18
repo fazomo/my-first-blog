@@ -1,0 +1,11 @@
+body {background:#fff}
+header {background:#364659}
+header h1 {color:#fff}
+
+#post_area {background:#fff; min-height:300px; width:100%}
+#post_area p {color:#364659}
+#post_area p > span {color:#aaa}
+#post_area h2 {color:#364659}
+#post_area a {text-decoration:none}
+
+.seperator {height:2px; width:100%; background:#FFF}
