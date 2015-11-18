@@ -1,14 +1,27 @@
 <html>
 <head>
 <style>
-body {background:green}
-.abc {background:white; height:300px; width:100%; position:absolute; top:300px}
+body {background:#fff}
+.abc {background:#364659; height:300px; width:100%}
+.abc p, .abc h1 {color:#fff}
+.abc a {text-decoration:none; color:#fff}
+
+.def {height:2px; width:100%; background:#FFF}
 </style>
 </head>
 <body>
+
+{% for post in posts %}
+
 <section class="abc">
-{{ posts }}
-<a href="http://happybohm.cafe24.com">헤헷헤헤헷</a>
+<p>published: {{ post.published_date }}</p>
+<h1><a href="">{{ post.title }}</a></h1>
+<p>{{ post.text|linebreaks }}</p>
 </section>
+<section class="def">
+</section>
+
+{% endfor %}
+
 </body>
 </html>
