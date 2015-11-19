@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+<html>
+<head>
+<title>fazomo's Blog</title>
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>안뇽?<h1>
+  </header>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

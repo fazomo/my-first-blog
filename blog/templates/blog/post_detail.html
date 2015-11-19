@@ -1,15 +1,8 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-{% for post in posts %}
 <section id="post_area">
   <p class="info"><span>By</span>{{ post.author }}<span></span><span>Published</span>{{ post.published_date }}</p>
-  <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
+  <h3>{{ post.title }}</h3>
   <p class="content">{{ post.text|linebreaks }}</p>
-
-  <section class="seperator">
-  </section>
-</section>
-{% endfor %}
-
-{% endblock content %}
+{% endblock %}
